@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: williamhill-app
+  labels:
+    app: wh-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: wh-app
+  template:
+    metadata:
+      labels:
+        app: wh-app
+    spec:
+      containers:
+      - name: wh-app
+        image: jshdevops/william-hill:latest
+        ports:
+        - containerPort: 80

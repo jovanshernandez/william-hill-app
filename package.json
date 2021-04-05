@@ -1,0 +1,13 @@
+{
+  "name": "william-hill-docker",
+  "version": "1.0.0",
+  "description": "william-hill-docker test",
+  "author": "Jovan Hernandez <jovanshernandez@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
